@@ -1,0 +1,15 @@
+{
+  "name": "check_le_count",
+  "version": "1.0.0",
+  "description": "Check the number of renewals and issuances on LetsEncrypt for a domain",
+  "main": "checkissuancecount.js",
+  "dependencies": {
+    "pg": "^7.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Butter",
+  "license": "BSD-2-Clause"
+}
