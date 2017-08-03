@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { Pool, Client } = require("pg");
+const { Pool, Client, types } = require("pg");
 
 const pool = new Pool({
   user: "guest",
@@ -13,6 +13,10 @@ if (process.argv.length < 3) {
   console.log("node check_le_count %.example.com [number of days]");
   process.exit();
 }
+
+types.setTypeParser(1114, function(stringValue) {
+    return new Date(Date.parse(stringValue + "+0000"));
+})
 
 var days = process.argv[3] === undefined ? 7 : parseInt(process.argv[3]);
 

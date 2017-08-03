@@ -11,8 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-          "check_le_count": "check_le_count.js"
-      },
+    "check_le_count": "check_le_count.js"
+  },
   "author": "Thomas Butter",
   "license": "BSD-2-Clause"
 }
